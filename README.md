@@ -3,7 +3,7 @@ A Commandline Interface to OpenAI's GPT models.
 
 
 # Demo
-![](./chatgpt-cmd.gifYour_GIF_Name.gif)
+![](https://github.com/pbhalesain/chatgpt-cmd/blob/master/chatgpt-cmd.gif)
 
 
 # Instructions
