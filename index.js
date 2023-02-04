@@ -7,17 +7,11 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const { OPENAI_END_POINT } = process.env;
-const { DEFAULT_USER_PROMPT } = process.env;
-const { OPENAI_KEY } = process.env;
-const { DEFAULT_RESPONSE_PROMT } = process.env;
-
-const chatgptURL = OPENAI_END_POINT
+const chatgptURL = process.env.OPENAI_END_POINT
 const prompt = process.env.DEFAULT_USER_PROMPT
 const apiKey = process.env.OPENAI_KEY
 const chatgpt_ans = process.env.DEFAULT_RESPONSE_PROMT
-
-console.log(prompt);
+const model_name = process.env.OPENAI_MODEL
 
 console.log('Welcome to ChatGPT!');
 console.log('Start typing to interact with the ChatGPT server.');
@@ -37,7 +31,7 @@ rl.on('line', line => {
   axios
     .post(chatgptURL, {
       prompt: line,
-      model: 'text-davinci-003',
+      model: model_name,
       max_tokens: 1024,
       temperature: 0
     }, {
