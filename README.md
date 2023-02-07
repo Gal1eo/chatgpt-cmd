@@ -23,13 +23,13 @@ node index.js
 
 If everything works fine, you should get a prompt 
 ```bash
-You > :
+You >
 ```
 Enter your prompt for ChatGPT, the request then will be sent to the OpenAI server.
 Ideally you should get response in few seconds.
 The reponse is printed as 
 ```bash
-ChatGPT > :
+ChatGPT >
 ```
 A demo is uploaded using terminalizer, hopefully that will explain the use. 
 
